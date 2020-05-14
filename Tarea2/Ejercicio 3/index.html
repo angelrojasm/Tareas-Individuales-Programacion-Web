@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 3</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="form-div">
+			<form action="mailto:angelrojasm6@gmail.com" method="POST">
+				<p>
+					<label>
+						Escribe tu nombre:
+						<input type="text" name="nombre" required />
+					</label>
+				</p>
+				<p>
+					<label>
+						introduce tu contraseña:
+						<input type="password" name="password" required />
+					</label>
+				</p>
+				<p>
+					<label>
+						Enviame una foto tuya:
+						<input
+							type="file"
+							name="image"
+							accept="image/png, image/jpeg"
+							required
+						/>
+					</label>
+				</p>
+				<p>Este manual te parece:</p>
+				<p>
+					<label>
+						<input type="radio" name="opinion" />
+						Muy Bueno
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="opinion" />
+						Bueno
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="opinion" />
+						Malo
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="radio" name="opinion" />
+						Muy Malo
+					</label>
+				</p>
+				<p>
+					<label>
+						<input type="checkbox" name="checkbox" />
+						Avisarme de actualizaciones
+					</label>
+				</p>
+				<input type="submit" value="Enviar" />
+				<input type="reset" value="Borrar" />
+			</form>
+		</div>
+	</body>
+</html>

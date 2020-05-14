@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulario de datos personales</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<h1>Datos personales</h1>
+		<hr size="5" />
+		<br /><br />
+		Llena el siguiente formulario con los datos que se solicitan, por favor:
+		<form method="POST" action="mailto:insert-mail-here" enctype="text/plain">
+			<table border="0">
+				<tr>
+					<td>
+						<b>Nombre: </b>
+					</td>
+					<td>
+						<input type="text" maxlength="20" size="15" name="nombre" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Apellido: </b>
+					</td>
+					<td>
+						<input type="text" maxlength="20" size="15" name="apellido" />
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Nacionalidad: </b>
+					</td>
+					<td>
+						<select>
+							<option value="Salvadoreño">Salvadoreño(a)</option>
+							<option value="Hondureño">Hondureño(a)</option>
+							<option value="Guatemalteco">Guatemalteco(a)</option>
+							<option value="Costarricense">Costarricense</option>
+							<option value="Nicaraguense">Nicaraguense</option>
+							<option value="Panameño">Panameño(a)</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<b>Sexo: </b>
+					</td>
+					<td>
+						<input type="radio" name="sexo" value="mas" checked /><b
+							>Masculino</b
+						><br />
+						<input type="radio" name="sexo" value="fem" checked /><b
+							>Femenino</b
+						>
+					</td>
+				</tr>
+				<tr>
+					<td><b>Direcci&oacute;n: </b></td>
+					<td>
+						<input type="text" maxlength="40" size="30" name="direccion" />
+					</td>
+				</tr>
+				<tr>
+					<td><b>Tel&eacute;fono: </b></td>
+					<td>
+						<input type="text" maxlength="11" size="10" name="telefono" />
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center">
+						<input
+							type="image"
+							name="botonenviar"
+							src="data:image/jpeg;base64,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"
+						/>
+						<input type="reset" name="botoncancelar" value="Restablecer" />
+					</td>
+				</tr>
+			</table>
+		</form>
+	</body>
+</html>

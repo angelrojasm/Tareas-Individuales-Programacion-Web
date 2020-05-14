@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ejercicio 4</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div id="form-div">
+			<h1>Libro de Visitas</h1>
+			<form
+				name="miformulario"
+				action="mailto:angelrojasm6@gmail.com"
+				method="POST"
+			>
+				<h3 id="personal">Datos Personales</h3>
+				<p>
+					<label>
+						Nombre:
+						<input type="text" name="nombre" required />
+					</label>
+				</p>
+				<p>
+					<label>
+						Apellidos:
+						<input type="text" name="apellido" required />
+					</label>
+				</p>
+				<h3 id="pseudonimo">Indica un pseudonimo y una contraseña:</h3>
+				<p>
+					<label>
+						Pesudonimo:
+						<input type="text" name="pseudonimo" maxlength="16" />
+						Contraseña:
+						<input type="password" name="contraseña" maxlength="12" required />
+					</label>
+				</p>
+				<h3 id="otros-datos">Otros datos</h3>
+				<div class="options-list">
+					<div class="edad">
+						<p>Edad:</p>
+						<p>
+							<label>
+								<input type="radio" name="edad" />
+								0-10
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="edad" />
+								11-20
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="edad" />
+								21-30
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="edad" />
+								31-40
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="edad" />
+								41 o mas
+							</label>
+						</p>
+					</div>
+					<div class="ubicacion">
+						<p>Donde Vives?</p>
+						<p>
+							<label>
+								<input type="radio" name="ubicacion" />
+								Santiago
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="ubicacion" />
+								Santo Domingo
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="ubicacion" />
+								La Romana
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="ubicacion" />
+								San Cristobal
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="radio" name="ubicacion" />
+								Otros
+								<input type="text" name="otra-ubicacion" />
+							</label>
+						</p>
+					</div>
+					<div class="Aficiones">
+						<p>Aficiones:</p>
+						<p>
+							<label>
+								<input type="checkbox" name="aficion" />
+								Musica
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="aficion" />
+								Deportes
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="aficion" />
+								Pintura
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="aficion" />
+								Lectura
+							</label>
+						</p>
+						<p>
+							<label>
+								<input type="checkbox" name="aficion" />
+								Otras
+								<input type="text" name="otra-aficion" />
+							</label>
+						</p>
+					</div>
+				</div>
+				<input type="submit" value="Enviar" name="boton-enviar" />
+				<input type="reset" value="Borrar" name="boton-borrar" />
+			</form>
+		</div>
+	</body>
+</html>

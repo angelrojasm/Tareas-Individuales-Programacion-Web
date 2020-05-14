@@ -1,0 +1,39 @@
+html,
+body {
+	margin: 0;
+	height: 100%;
+}
+
+table {
+	border-collapse: collapse;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 0.9em;
+}
+
+th,
+tr,
+td {
+	border: 1px solid #333;
+	padding: 4px;
+}
+
+.highlight {
+	background-color: #ffffcc;
+}
+
+.highlight:hover {
+	background-color: #ffff66;
+}
+
+.item {
+	background: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMUAAAEACAMAAAA0tEJxAAAAA1BMVEXZ19hjUzpbAAAASElEQVR4nO3BMQEAAADCoPVPbQwfoAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA+BsYAAAF7hZJ0AAAAAElFTkSuQmCC')
+		no-repeat center;
+}
+#table {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	text-align: center;
+}
