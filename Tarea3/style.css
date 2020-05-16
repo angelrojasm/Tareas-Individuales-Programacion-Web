@@ -1,0 +1,113 @@
+/*
+'https://como-funciona.com/wp-content/uploads/2019/12/c%C3%B3mo-funcionan-los-hobbies-1024x512.jpg'
+*/
+
+html,
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	color: seashell;
+	background-color: black;
+	opacity: 0.9;
+	margin: 0;
+}
+nav {
+	position: relative;
+	top: -10px;
+}
+
+header {
+	margin: 0 auto;
+	height: 700px;
+	width: 1200px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 50px;
+}
+
+footer {
+	height: 200px;
+	margin: 0;
+	margin-top: 10px;
+	text-align: center;
+}
+
+ul {
+	position: relative;
+	left: 200px;
+	list-style-type: none;
+	margin: auto;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+li {
+	margin: 10px;
+}
+li a {
+	text-align: right;
+	text-decoration: none;
+	color: white;
+}
+
+.nav-icon {
+	color: seashell;
+	font-family: Helvetica, sans-serif;
+	margin-left: 10px;
+}
+
+.jumbotron {
+	background-color: #fff;
+	color: black;
+	text-align: center;
+	height: 75%;
+	width: 1200px;
+}
+.info-panel {
+	display: flex;
+	justify-content: space-evenly;
+	align-content: center;
+}
+.info-panel a {
+	position: relative;
+	top: 25px;
+	height: 60%;
+	width: 25%;
+}
+
+.info-panel h4 {
+	text-align: left;
+	width: 400px;
+}
+
+#hobbies,
+#places,
+#recommendation {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	margin: 0 auto;
+	width: 1000px;
+	text-align: center;
+	margin-bottom: 100px;
+	background-color: whitesmoke;
+	height: 500px;
+	color: black;
+	border-radius: 10px;
+}
+
+#places {
+	background-color: seashell;
+}
+
+#recommendation {
+	background-color: gainsboro;
+}
+
+#hobbies,
+#places,
+#recommendations h1,
+h2 {
+	font-weight: 600;
+}
