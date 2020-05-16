@@ -1,0 +1,45 @@
+html,
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	color: white;
+	background-color: black;
+	opacity: 0.9;
+	margin: 0;
+	text-align: center;
+}
+
+nav {
+	margin: 0 auto;
+	width: 80%;
+}
+
+button {
+	margin-bottom: 20px;
+}
+
+main {
+	width: 50%;
+	background-color: white;
+	margin: 0 auto;
+	border-radius: 10px;
+	color: black;
+}
+
+.form-control {
+	width: 50%;
+	margin: 0 auto;
+}
+
+.radio-group {
+	display: flex;
+	justify-content: center;
+}
+
+.radio-group .form-check {
+	margin-right: 5%;
+}
+
+.progress {
+	margin-bottom: 5%;
+}

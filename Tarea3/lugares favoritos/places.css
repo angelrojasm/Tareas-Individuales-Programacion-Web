@@ -1,0 +1,33 @@
+html,
+body {
+	font-family: Helvetica, sans-serif;
+	font-size: 22px;
+	color: white;
+	background-color: black;
+	opacity: 0.9;
+	margin: 0;
+	text-align: center;
+}
+
+main {
+	margin-bottom: 50px;
+}
+
+nav {
+	margin: 0 auto;
+	width: 80%;
+}
+
+h1 {
+	margin: 30px;
+}
+
+img {
+	width: 60%;
+	border-radius: 10px;
+}
+
+.pagination {
+	outline: none;
+	margin: 0 auto;
+}
