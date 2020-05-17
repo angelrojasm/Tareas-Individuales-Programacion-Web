@@ -49,6 +49,7 @@
 						class="form-control"
 						id="apellido"
 						placeholder="Apellido"
+						required
 					/>
 				</div>
 				<label>Que me quieres recomendar?</label>
@@ -58,7 +59,7 @@
 							class="form-check-input"
 							type="radio"
 							name="exampleRadios"
-							id="exampleRadios1"
+							id="radio-1"
 							value="option1"
 							checked
 						/>
@@ -71,7 +72,7 @@
 							class="form-check-input"
 							type="radio"
 							name="exampleRadios"
-							id="exampleRadios2"
+							id="radio-2"
 							value="option2"
 						/>
 						<label class="form-check-label" for="exampleRadios2">
@@ -84,7 +85,7 @@
 					<input
 						type="text"
 						class="form-control"
-						id="recommendation"
+						id="recommendation-input"
 						aria-describedby="emailHelp"
 						required
 					/>
@@ -95,12 +96,14 @@
 					>
 					<textarea
 						class="form-control"
-						id="exampleFormControlTextarea1"
+						id="text-area"
 						rows="4"
+						required
 					></textarea>
 				</div>
-				<div class="progress" id="progress">
+				<div class="progress">
 					<div
+						id="progress"
 						class="progress-bar"
 						role="progressbar"
 						aria-valuenow="25"
@@ -108,8 +111,8 @@
 						aria-valuemax="100"
 					></div>
 				</div>
-				<button type="submit" class="btn btn-primary" disabled>
-					<i class="fas fa-clipboard-check"></i>Submit
+				<button id="submit" type="submit" class="btn btn-success" disabled>
+					<i class="fa fa-check"></i>
 				</button>
 			</form>
 		</main>
@@ -129,4 +132,5 @@
 		integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 		crossorigin="anonymous"
 	></script>
+	<script src="./recommendations.js"></script>
 </html>

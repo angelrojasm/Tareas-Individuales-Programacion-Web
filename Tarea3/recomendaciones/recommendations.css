@@ -43,3 +43,7 @@ main {
 .progress {
 	margin-bottom: 5%;
 }
+
+#progress {
+	background-color: limegreen;
+}

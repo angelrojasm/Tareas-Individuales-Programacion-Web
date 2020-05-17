@@ -17,6 +17,7 @@ nav {
 h1,
 h6 {
 	margin: 30px;
+	margin-bottom: 10px;
 }
 
 main {
@@ -27,7 +28,7 @@ main {
 	justify-content: space-between;
 	align-items: center;
 	background-color: white;
-	height: 500px;
+	height: 550px;
 }
 
 .list-group {
@@ -39,6 +40,7 @@ main {
 .list-group-item {
 	border-bottom: 1px solid black;
 	border-top: 1px solid black;
+	cursor: pointer;
 }
 
 .nav-icon {
@@ -46,7 +48,9 @@ main {
 	font-family: Helvetica, sans-serif;
 	margin-left: 10px;
 }
-
+.highlight {
+	color: white !important;
+}
 .card {
 	border: none;
 	margin-right: 1%;
@@ -63,17 +67,15 @@ main {
 	border-radius: 10px;
 }
 
-.card-body {
-	position: relative;
-	bottom: 4%;
-}
-
-.card-text {
-	position: relative;
-	bottom: 4%;
-}
 #card-2,
 #card-3,
-#card-1 {
+#card-4 {
 	display: none;
+}
+
+#videojuegos,
+#musica,
+#ajedrez,
+#dominos {
+	color: black;
 }

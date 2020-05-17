@@ -35,26 +35,43 @@
 		</h6>
 		<main>
 			<image
+				id="main"
 				src="https://www.luminariastv.com/wp-content/uploads/2017/06/La-bolera-e1497359116122.jpg"
 			/>
-			<p>Sebelen Bowling Center</p>
+			<p id="description">Sebelen Bowling Center</p>
 		</main>
+		<div
+			id="alert"
+			class="alert alert-warning alert-dismissible fade show"
+			role="alert"
+		>
+			<strong>Cuidado!</strong
+			><span id="error-message"
+				>You should check in on some of those fields below.</span
+			>
+			<button id="alert-dismiss" class="close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+		</div>
+
 		<ul class="pagination justify-content-center">
-			<li class="page-item">
-				<a class="page-link" href="#" aria-label="Previous">
+			<li id="previous" class="page-item">
+				<a class="page-link" aria-label="Previous">
 					<span aria-hidden="true">&laquo;</span>
 				</a>
 			</li>
-			<li class="page-item active"><a class="page-link" href="#">1</a></li>
-			<li class="page-item"><a class="page-link" href="#">2</a></li>
-			<li class="page-item"><a class="page-link" href="#">3</a></li>
-			<li class="page-item">
-				<a class="page-link" href="#" aria-label="Next">
+			<li id="first" class="page-item active">
+				<a class="page-link">1</a>
+			</li>
+			<li id="second" class="page-item"><a class="page-link">2</a></li>
+			<li id="third" class="page-item"><a class="page-link">3</a></li>
+			<li id="fourth" class="page-item"><a class="page-link">4</a></li>
+			<li id="next" class="page-item">
+				<a class="page-link" aria-label="Next">
 					<span aria-hidden="true">&raquo;</span>
 				</a>
 			</li>
 		</ul>
-
 		<script
 			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
 			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
@@ -70,5 +87,6 @@
 			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
 			crossorigin="anonymous"
 		></script>
+		<script src="places.js"></script>
 	</body>
 </html>

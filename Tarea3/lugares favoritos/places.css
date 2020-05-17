@@ -27,7 +27,27 @@ img {
 	border-radius: 10px;
 }
 
+.page-item {
+	color: blue;
+	outline: none;
+}
+
 .pagination {
 	outline: none;
-	margin: 0 auto;
+	margin: 10px auto;
+}
+
+#previous a,
+#next a {
+	color: blue;
+}
+
+#alert {
+	display: none;
+	width: 60%;
+	margin: 20px auto;
+}
+
+#alert-dismiss {
+	outline: none;
 }
