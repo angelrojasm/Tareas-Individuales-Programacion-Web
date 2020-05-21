@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var var1 = prompt('Ingrese el primer numero: ');
+
+			do {
+				var var2 = prompt('Ingrese el segundo numero: ');
+			} while (var2 === var1);
+
+			var1 = parseInt(var1);
+			var2 = parseInt(var2);
+
+			if (var1 > var2) {
+				document.write(
+					'<h2 style="font-weight: 400"> El primer valor: ' +
+						var1 +
+						' Es superior al segundo valor: ' +
+						var2 +
+						'</h2>'
+				);
+				document.write(
+					'<h3 style="font-weight: 400"> La suma de los valores ' +
+						var1 +
+						' + ' +
+						var2 +
+						' = ' +
+						(var1 + var2) +
+						'</h2>'
+				);
+				document.write(
+					'<h3 style="font-weight: 400"> La diferencia de los valores ' +
+						var1 +
+						' - ' +
+						var2 +
+						' = ' +
+						(var1 - var2) +
+						'</h2>'
+				);
+			} else {
+				document.write(
+					'<h2 style="font-weight: 400"> El segundo valor: ' +
+						var2 +
+						' Es superior al primer valor: ' +
+						var1 +
+						'</h2>'
+				);
+				document.write(
+					'<h3 style="font-weight: 400"> El producto de los valores ' +
+						var1 +
+						' * ' +
+						var2 +
+						' = ' +
+						var1 * var2 +
+						'</h2>'
+				);
+				document.write(
+					'<h3 style="font-weight: 400"> La division de los valores ' +
+						var1 +
+						' / ' +
+						var2 +
+						' = ' +
+						var1 / var2 +
+						'</h2>'
+				);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var vars = [3];
+			var minElement = 1;
+			var maxElement = 2;
+
+			for (let index = 0; index < 3; index++, minElement--, maxElement--) {
+				if (index === 1) {
+					minElement--;
+				}
+				if (index === 2) {
+					maxElement--;
+				}
+				do {
+					vars[index] = prompt('Ingrese el valor del numero ' + (index + 1), '');
+					parseInt(vars[index]);
+				} while (
+					vars[index] < 0 ||
+					vars[index] === vars[index + minElement] ||
+					vars[index] === vars[index + maxElement]
+				);
+			}
+			vars.sort();
+
+			document.write(
+				'<h2 style="font-weight: 400"> El numero mas grande de los tres digitados es: <strong>' +
+					vars[2] +
+					'</strong></h2>'
+			);
+			document.write(
+				'<h4 style="font-weight: 400"> El numero mas pequeño de los tres digitados es: <strong> ' +
+					vars[0] +
+					'</strong></h4>'
+			);
+		</script>
+	</body>
+</html>

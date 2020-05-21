@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			var triangle1 = {
+				side1: 0,
+				side2: 0,
+				side3: 0,
+				type: '',
+			};
+			var triangle2 = {
+				side1: 0,
+				side2: 0,
+				side3: 0,
+				type: '',
+			};
+			var triangle3 = {
+				side1: 0,
+				side2: 0,
+				side3: 0,
+				type: '',
+			};
+			var triangle4 = {
+				side1: 0,
+				side2: 0,
+				side3: 0,
+				type: '',
+			};
+
+			const fillTriangle = num => {
+				return {
+					side1: prompt('Ingrese el primer lado del triangulo ' + num + ':', ''),
+					side2: prompt('Ingrese el segundo lado del triangulo ' + num + ':', ''),
+					side3: prompt('Ingrese el tercer lado del triangulo ' + num + ':', ''),
+				};
+			};
+
+			triangle1 = fillTriangle(1);
+			triangle2 = fillTriangle(2);
+			triangle3 = fillTriangle(3);
+			triangle4 = fillTriangle(4);
+
+			var equilateral = 0;
+			var isoceles = 0;
+			var scalene = 0;
+
+			const findTriangle = triangle => {
+				let count = 0;
+				if (triangle.side1 === triangle.side2) {
+					count++;
+				}
+				if (triangle.side2 === triangle.side3) {
+					count++;
+				}
+				if (triangle.side1 === triangle.side3) {
+					count++;
+				}
+				switch (count) {
+					case 0:
+						scalene++;
+						triangle.type = 'escaleno';
+						break;
+					case 1:
+					case 2:
+						isoceles++;
+						triangle.type = 'isoceles';
+						break;
+
+					case 3:
+						equilateral++;
+						triangle.type = 'equilatero';
+						break;
+				}
+			};
+
+			const findLeastPresent = () => {
+				if (equilateral < isoceles && equilateral < scalene) {
+					return {
+						triangle: 'equilatero',
+						amount: equilateral,
+					};
+				} else if (isoceles < equilateral && isoceles < scalene) {
+					return {
+						triangle: 'isoceles',
+						amount: isoceles,
+					};
+				} else {
+					return {
+						triangle: 'escaleno',
+						amount: scalene,
+					};
+				}
+			};
+			findTriangle(triangle1);
+			findTriangle(triangle2);
+			findTriangle(triangle3);
+			findTriangle(triangle4);
+			const leastPresent = findLeastPresent();
+
+			document.write(
+				'El Triangulo 1 es: ' +
+					triangle1.type +
+					'.<br> El triangulo 2 es: ' +
+					triangle2.type +
+					'.<br> El triangulo 3 es: ' +
+					triangle3.type +
+					'.<br> El triangulo 4 es: ' +
+					triangle4.type +
+					'.'
+			);
+			document.write(
+				'<br> La cantidad de triangulos equilateros es: ' +
+					equilateral +
+					'.<br> La cantidad de triangulos isoceles es: ' +
+					isoceles +
+					'.<br> La cantidad de triangulos escalenos es: ' +
+					scalene +
+					'.'
+			);
+			document.write(
+				'<br> El tipo de triangulos que tiene la menor cantidad es: ' +
+					leastPresent.triangle +
+					', con ' +
+					leastPresent.amount +
+					' triangulo(s) presentes.'
+			);
+		</script>
+	</body>
+</html>
