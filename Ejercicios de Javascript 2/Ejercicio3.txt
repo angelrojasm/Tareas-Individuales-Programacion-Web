@@ -1,0 +1,7 @@
+Investigue qué es Null y undefined en JavaScript
+
+-  Null es un valor que se le asigna a una variable en representacion de que no tiene ningun valor explicito. 
+
+    Mientras, Undefined se presenta en el caso de que un valor sea declarado sin asignacion.
+
+    Por ejemplo, la variable var x; tendria un valor de undefined hasta el momento de asignarle algun valor.

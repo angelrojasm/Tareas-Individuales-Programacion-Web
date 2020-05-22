@@ -1,0 +1,25 @@
+Investigue a qué se le llama JavaScript no invasivo, no obstructivo o no intrusivo (unobtrusive JavaScript). Muestre un ejemplo.
+
+- Unobstrusive JavaScript es una metodologia que conlleva varias practicas al momento de  agregar Javascript al frontend de la aplicacion. El enfoque principal radica en que no todos los usuarios van a tener JavaScript habilitado en sus maquinas al momento de correr la aplicacion. Esto puede ocasionar problemas serios en la pagina si no se programa correctamente. 
+
+El enfoque de la metodologia de unobtrusive JavaScript es que el uso de javascript en el frontend de tu pagina no deberia, o deberia afectar al usuario lo menos posible, en el caso de que el usuario no tenga javascript habilitado.
+
+Por ejemplo, dado el siguiente elemento html con codigo javascript:
+
+                <a href="javascript:window.open('https://www.wikipedia.org)">Mi Articulo</a> 
+
+Podemos observar que la carga del siguiente enlace se hace mediante la funcion open de javascript. En el caso de que el usuario no cargue javascript al momento de interactuar con el enlace, el mismo simplemente no funcionara.
+
+Ahora, si utilizamos un acercamiento no obstructivo, podriamos manejar el enlace de la siguiente manera.
+
+                <a href="https://www.wikipedia.org" id="myLink">Mi Articulo</a>
+
+En este caso, le asignamos un identificador unico a este enlace. En el caso de ser varios enlaces les podemos asignar una clase a todos, ademas de que podemos tomar la oportunidad y aplicarles estilos CSS.
+
+Luego, en un script de javascript podemos trabajar el enlaze de la siguientee manera:
+
+                const myLink = document.getElementById('myLink')
+                myLink.onclick = () => {
+                    window.open('https.www.wikipedia.org')
+                }
+De esta manera, el enlace nos lleva al mismo sitio utilizando codigo javascript, pero, en el caso de que javascript no este cargado, el enlace como sea funcionara debido a su atributo inherente href.
